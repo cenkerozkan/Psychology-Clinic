@@ -1,0 +1,32 @@
+---
+import Logo from "../../public/logo.jpeg";
+import NavbarElement from "./NavbarElement.astro";
+import { Image } from 'astro:assets';
+---
+<div class="flex flex-col h-full w-[50%] pl-5 bg-green-500">
+    <div class="flex flex-col items-start justify-center bg-yellow-500">
+        <Image src={Logo} alt="Logo" class="w-full" />
+    </div>
+    <div class="flex flex-col items-start justify-evenly bg-blue-500">
+        <div>
+            <NavbarElement title="Ana Sayfa" href="/"/>
+        </div>
+        <div>
+            <NavbarElement title="Hakkımızda" href="/about" />
+        </div>
+        <div>
+            <NavbarElement title="Hizmetlerimiz" href="/services" />
+        </div>
+        <div>
+            <NavbarElement title="İletişim" href="/contact" />
+        </div>
+        <div>
+            <NavbarElement title="Blog" href="/blog" />
+        </div>
+    </div>
+    <div>
+
+    </div>
+</div>
+<script>
+</script>
